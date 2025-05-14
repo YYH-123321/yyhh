@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人信息 | 个人网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="profile.html">个人信息</a></li>
+        <li><a href="#" id="logoutBtn">退出登录</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="profile-container">
+    <h2>个人资料</h2>
+    <div class="profile-card">
+      <img src="https://picsum.photos/200/200" alt="个人头像">
+      <div class="profile-info">
+        <h3 id="profileName">加载中...</h3>
+        <p><strong>职业：</strong> <span id="profileJob">加载中...</span></p>
+        <p><strong>邮箱：</strong> <span id="profileEmail">加载中...</span></p>
+        <p><strong>简介：</strong> <span id="profileBio">加载中...</span></p>
+      </div>
+    </div>
+
+    <h2>编辑个人信息</h2>
+    <form id="profileForm">
+      <div class="form-group">
+        <label for="editName">姓名</label>
+        <input type="text" id="editName" required>
+      </div>
+      <div class="form-group">
+        <label for="editJob">职业</label>
+        <input type="text" id="editJob" required>
+      </div>
+      <div class="form-group">
+        <label for="editEmail">邮箱</label>
+        <input type="email" id="editEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="editBio">简介</label>
+        <textarea id="editBio" required></textarea>
+      </div>
+      <button type="submit">保存修改</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
